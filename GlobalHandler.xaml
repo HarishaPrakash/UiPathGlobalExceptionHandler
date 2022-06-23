@@ -14,7 +14,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1785.33333333333,908</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1581.33333333333,908</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GlobalHandler_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -68,7 +68,6 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="This sequence steps in during execution when the project encounters an unmanaged error.&#xA;&#xA;Important: Arguments 'errorInfo' and 'result' should not be removed." DisplayName="Global Exception Handler" sap:VirtualizedContainerService.HintSize="612,676.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -105,7 +104,7 @@
             <OutArgument x:TypeArguments="uico:ErrorAction">[result]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="uico:ErrorAction">[ErrorAction.Ignore]</InArgument>
+            <InArgument x:TypeArguments="uico:ErrorAction">[ErrorAction.Abort]</InArgument>
           </Assign.Value>
         </Assign>
       </If.Else>
